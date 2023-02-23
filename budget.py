@@ -4,8 +4,8 @@ import plotly.graph_objects as go
 from dash import Dash, dcc, html
 import plotly.express as px
 
-# Connect to GoogleSheets
-sheet_id = ${{ secrets.GOOGLE_SHEET_ID }}
+# Connect to GoogleSheets (example operations)
+sheet_id = '1ylnURhd2nLlszYNLdqptqZoFudwUILnnwThInmMCqkU'
 sheet_name = 'operations'
 url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
 
