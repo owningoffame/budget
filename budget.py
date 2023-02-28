@@ -32,7 +32,7 @@ df = df.groupby(['Category']).agg({
 expenses_df = df[df['Payment_Amount'] <= 0].sort_values('Payment_Amount', ascending=True)
 expenses_df['Amount'] = abs(df['Payment_Amount'])  # For Sunburst chart
 
-# Grope by macro-categories
+# Group by macro-categories
 home_categories = ['ЖКХ',
                    'Дом'
                    ]
